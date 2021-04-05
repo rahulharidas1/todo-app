@@ -1,5 +1,6 @@
 import React, { useState} from 'react';
 import './App.css';
+import ToDoList from './ToDoList';
 
 const App = () => {
   const [inputText, setInputText] = useState("");
@@ -30,7 +31,7 @@ const App = () => {
       <ol>
         {
           item.map((item)=>{
-            return <li>{item}</li>
+            return <ToDoList item={item}/>
           })
         }
         
