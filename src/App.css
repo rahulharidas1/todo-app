@@ -15,7 +15,7 @@ body{
 
 .main-header{
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .container{
@@ -35,7 +35,7 @@ body{
   border:0;
   border-radius: 10px;
   box-shadow: 3px 3px 2px rgba(0,0,0,0.3);
-  min-width: 250px;
+  min-width: 220px;
 }
 
 .input:focus{
@@ -53,8 +53,25 @@ body{
   cursor: pointer;
   box-shadow: 3px 3px 2px #D97706 ;
   margin:0px 10px;
-  transition: all 1s ease-in 0s;
+  transition: background-color 0.2s ease-in 0s;
 }
 .button:hover{
   background-color: #B45309 ;
+}
+
+.container ol{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  list-style: none;
+  margin-right: 30px;
+  
+}
+
+.container ol li{
+  
+  font-size: large;
+  font-weight:normal;
 }
