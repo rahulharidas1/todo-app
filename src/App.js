@@ -1,7 +1,23 @@
-import React from 'react';
+import React, { useState} from 'react';
 import './App.css';
 
 const App = () => {
+  const [inputText, setInputText] = useState("");
+  const [item, setItem] = useState([]);
+
+
+  function onChangeHandler(event){
+    var text = event.target.value;
+    setInputText(text);
+    
+  }
+
+  function onClickHandler(){
+    setItem((oldItem)=>{
+      return [...oldItem,inputText];
+    })
+    setInputText("");
+  }
   return <>
   
     <div className="main-div">
@@ -9,8 +25,16 @@ const App = () => {
       
       <h1 className="main-header"> TODO List 👇</h1>
       <br/>
-      <input className="input" type="text" placeholder="Enter an item here.."></input>
-      <button className="button">+</button>
+      <input value={inputText} onChange={onChangeHandler} className="input" type="text" placeholder="Enter an item here.."></input>
+      <button onClick={onClickHandler} className="button">+</button>
+      <ol>
+        {
+          item.map((item)=>{
+            return <li>{item}</li>
+          })
+        }
+        
+      </ol>
     </div>
     </div>
   
