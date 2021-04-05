@@ -1,1 +1,1 @@
-# A TODO app made with ReactJS
+# This is a simple TO-DO app made with ReactJS
