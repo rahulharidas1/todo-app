@@ -31,7 +31,7 @@ const App = () => {
       <ol>
         {
           item.map((item)=>{
-            return <ToDoList item={item}/>
+            return <ToDoList key={Math.random()} item={item}/>
           })
         }
         

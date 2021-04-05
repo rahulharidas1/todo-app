@@ -48,12 +48,14 @@ body{
   border-radius: 50%;
   border:0;
   background-color: #F59E0B;
-  font-size: large;
+  font-size: larger;
   outline: none;
   cursor: pointer;
   box-shadow: 3px 3px 2px #D97706 ;
   margin:0px 10px;
   transition: background-color 0.2s ease-in 0s;
+  color: white;
+  font-weight: bold;
 }
 .button:hover{
   background-color: #B45309 ;

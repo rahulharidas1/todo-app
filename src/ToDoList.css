@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+.delete-button{
+  min-height: 40px;
+  min-width: 40px;
+  max-height: 45px;
+  max-width: 45px;
+  border-radius: 50%;
+  border:0;
+  background-color: #F59E0B;
+  font-size: larger;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 3px 3px 2px #D97706 ;
+  margin:0px 10px;
+  transition: all 0.2s ease-in 0s;
+  color: white;
+  font-weight:bold;
+  margin-right: 30px;
+}
+
+.delete-button:hover{
+    background-color: #DC2626;
+    box-shadow: 3px 3px 2px #B91C1C;
+}
+.list-view{
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+    margin: 1rem;
+    border-radius: 10px;
+    margin-right: 70px;
+    min-width:250px;
+    box-shadow: 0px 0px 4px #D97706;
+
+}
+
+.list-item{
+    align-self: center;
+    padding-right: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+}
