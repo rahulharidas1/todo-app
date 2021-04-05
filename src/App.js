@@ -7,6 +7,14 @@ const App = () => {
   const [item, setItem] = useState([]);
 
 
+    function deleteItemCallback(id){
+      setItem((oldItem)=>{
+        return oldItem.filter((item,index)=>{
+          return index!==id;
+        })
+      })
+    }
+
   function onChangeHandler(event){
     var text = event.target.value;
     setInputText(text);
@@ -30,8 +38,8 @@ const App = () => {
       <button onClick={onClickHandler} className="button">+</button>
       <ol>
         {
-          item.map((item)=>{
-            return <ToDoList key={Math.random()} item={item}/>
+          item.map((item,index)=>{
+            return <ToDoList key={index} id={index} item={item} deleteSelectedItem={deleteItemCallback}/>
           })
         }
         
